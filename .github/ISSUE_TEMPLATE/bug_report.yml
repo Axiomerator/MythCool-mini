@@ -1,0 +1,28 @@
+name: 问题反馈
+description: 已支持设备上的故障或回归
+body:
+  - type: input
+    id: version
+    attributes:
+      label: MythCool-mini 与 Windows 版本
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: 冷头、VID/PID、CPU 与 GPU
+      description: 请注明 PawnIO、管理员权限与原版业务版本。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤、预期与实际结果
+      description: 参数问题请写出原版选择的指标名称。
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: 可选诊断或截图
+      description: 请删除个人路径、用户 SID、序列号和账号信息。

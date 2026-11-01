@@ -1,0 +1,12 @@
+/build/
+/dist/
+/third_party/
+/n360-analysis/
+/out/
+*.user
+*.pdb
+/releases/
+/local/
+/verification/
+/data/
+*.log

@@ -1,0 +1,93 @@
+{
+  "mini": {
+    "label": "mini-v0.2.0-after-logon",
+    "captured_at": "2026-11-01T19:46:08+08:00",
+    "duration_seconds": 60.0,
+    "sample_count": 61,
+    "logical_processors": 32,
+    "process_count": 1,
+    "cpu_seconds": 0.609375,
+    "cpu_percent_all_processors": 0.03173828125,
+    "memory_bytes": {
+      "working_set": {
+        "mean": 50597955.14754099,
+        "min": 49238016,
+        "max": 52510720
+      },
+      "private_commit": {
+        "mean": 30089820.327868853,
+        "min": 30044160,
+        "max": 31277056
+      },
+      "private_working_set": {
+        "mean": 27288559.213114753,
+        "min": 27152384,
+        "max": 28495872
+      }
+    },
+    "mean_handle_count": 360.6393442622951,
+    "process_io_bytes_per_second": {
+      "read_bytes": 504.45,
+      "write_bytes": 504.45,
+      "other_bytes": 190.53333333333333
+    },
+    "io_note": "Process I/O includes device/USB traffic; these are not disk-only transfer rates."
+  },
+  "original_historical_baseline": {
+    "sample_nominal_seconds": 5,
+    "logical_processors": 32,
+    "cpu_unit": "100% equals one logical processor; normalized host percentage divides by 32",
+    "memory_unit": "MiB; values rounded to one decimal",
+    "processes": [
+      {
+        "name": "GPP_USB_Center",
+        "working_set_mib": 4.3,
+        "private_commit_mib": 5.5,
+        "single_core_cpu_percent": 1.25
+      },
+      {
+        "name": "HwMonitor64",
+        "working_set_mib": 16.2,
+        "private_commit_mib": 79.2,
+        "single_core_cpu_percent": 6.88
+      },
+      {
+        "name": "MythCool",
+        "working_set_mib": 47.2,
+        "private_commit_mib": 53.5,
+        "single_core_cpu_percent": 0
+      },
+      {
+        "name": "MythCool",
+        "working_set_mib": 40.1,
+        "private_commit_mib": 71.7,
+        "single_core_cpu_percent": 12.81
+      },
+      {
+        "name": "MythCool",
+        "working_set_mib": 5.6,
+        "private_commit_mib": 14.6,
+        "single_core_cpu_percent": 0
+      },
+      {
+        "name": "MythCool",
+        "working_set_mib": 57.0,
+        "private_commit_mib": 77.2,
+        "single_core_cpu_percent": 1.56
+      },
+      {
+        "name": "MythCool",
+        "working_set_mib": 104.8,
+        "private_commit_mib": 121.1,
+        "single_core_cpu_percent": 12.81
+      }
+    ],
+    "totals": {
+      "private_commit_mib": 422.8,
+      "working_set_sum_mib": 275.2,
+      "single_core_cpu_percent": 35.31,
+      "host_cpu_percent": 1.1
+    }
+  },
+  "comparison_note": "Original is an earlier 5-second sample; mini is a later 60-second sample after successful Windows logoff/logon. Same machine, non-contemporaneous samples; not a controlled A/B benchmark."
+}

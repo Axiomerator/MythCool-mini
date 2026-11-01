@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.25)
+project(PawnIOLib LANGUAGES CXX)
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+add_library(PawnIOLib SHARED PawnIOLib.cpp)
+target_include_directories(PawnIOLib PRIVATE .)
+target_compile_definitions(PawnIOLib PRIVATE PawnIOLib_EXPORTS PAWNIO_NAME="PawnIO")
+target_link_libraries(PawnIOLib PRIVATE ntdll)
